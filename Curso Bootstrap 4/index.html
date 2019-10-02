@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
@@ -95,7 +96,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center my-5">
-          <h1 class="display-3">Lorem ipsum dolor</h1>
+          <h1 class="display-3"><i class="fa fa-cogs text-primary" aria-hidden="true"></i>
+            Lorem ipsum dolor</h1>
           <p>
             Adipiscing elit duis tristique sollicitudin nibh. Malesuada fames ac turpis egestas sed tempus urna et.
           </p>
@@ -170,9 +172,9 @@
               <li class="list-group-item">Nisi vitae</li>
               <li class="list-group-item">Lacus vel facilisis</li>
             </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Aliquam</a>
-              <a href="#" class="card-link">In pellentesque</a>
+            <div class="card-body">row jus
+              <a href="#" class="card-linrow jusk">Aliquam</a>
+              <a href="#" class="card-linrow jusk">In pellentesque</a>
             </div>
             <div class="card-footer text-muted">
               Justo donec
@@ -229,7 +231,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="display-4">Vulputate sapien</h1>
+            <h1 class="display-4"><i class="fa fa-video-camera text-primary" aria-hidden="true"></i> Vulputate sapien</h1>
             <p class="lead">
               Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Faucibus ornare suspendisse
               sed nisi lacus sed viverra tellus in. Arcu odio ut sem nulla.
@@ -275,7 +277,8 @@
                   </div>
                   <div class="col-sm-6">
                     <p>
-                      Arcu dictum varius duis at consectetur lorem. Turpis massa sed elementum tempus. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
+                      Arcu dictum varius duis at consectetur lorem. Turpis massa sed elementum tempus. Et magnis dis
+                      parturient montes nascetur ridiculus mus mauris vitae.
                     </p>
                   </div>
                 </div>
@@ -289,13 +292,79 @@
                   </div>
                   <div class="col-sm-6">
                     <p>
-                      Duis ut diam quam nulla. Commodo quis imperdiet massa tincidunt. Sed augue lacus viverra vitae congue eu.
+                      Duis ut diam quam nulla. Commodo quis imperdiet massa tincidunt. Sed augue lacus viverra vitae
+                      congue eu.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-5">
+          <h1 class="display-4"><i class="fa fa-paper-plane text-primary"></i> Bibendum est ultricies</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="inputNome">Seu nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="inputSobrenome">Seu sobrenome</label>
+                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <label for="inputEnd">Seu endereço</label>
+                <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="inputCidade">Sua cidade</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="inputEst">Seu estado</label>
+                <select id="inputEst" class="form-control">
+                  <option selected>Escolha</option>
+                  <option>...</option>
+                  <option>...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-2">
+                <label for="inputCep">Seu CEP</label>
+                <input type="text" class="form-control" id="inputCep">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Desejo receber novidades por e-mail
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right"
+                  data-trigger="focus" title="Massa tempor"
+                  data-content="Bibendum est ultricies integer quis auctor elit sed. Vitae proin sagittis nisl rhoncus.">Ajuda</a>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -350,5 +419,10 @@
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
   </body>
 </html>
